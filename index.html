@@ -16,9 +16,17 @@
       name="phone1"
       title="Формат: (099) 999 9999"
     />
+    <input
+      type="text"
+      placeholder="99/99/9999"
+      id="date"
+      name="date"
+      title="Формат: 99/99/9999"
+    />
     <script>
       $(document).ready(function ($) {
         $("#phone").mask("+38 (999)-999-9999", { autoсlear: false });
+        $("#date").mask("99/99/9999");
       });
     </script>
   </body>
