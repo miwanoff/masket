@@ -9,5 +9,17 @@
   </head>
   <body>
     <h1>Masked Input Plugin for jQuery</h1>
+    <input
+      type="text"
+      placeholder="+38 (___) ___ ____"
+      id="phone"
+      name="phone1"
+      title="Формат: (099) 999 9999"
+    />
+    <script>
+      $(document).ready(function ($) {
+        $("#phone").mask("+38 (999)-999-9999", { autoсlear: false });
+      });
+    </script>
   </body>
 </html>
